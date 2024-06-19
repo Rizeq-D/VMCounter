@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -50,7 +51,8 @@ fun TheCounter(viewModel: CounterViewModel) {
             Button(onClick = { viewModel.increment() }) {
                 Text("Increment")
             }
-            Spacer(modifier = Modifier.height(8.dp)) // Adding some space between the buttons
+            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.width(20.dp))// Adding some space between the buttons
             Button(onClick = { viewModel.decrement() }) {
                 Text("Decrement")
             }
